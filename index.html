@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="D:\New folder\project\file-5ef.css">
+  <title>Heroes List</title>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div>
+      <div class="circle">
+        <label class="inner-circle" for="fileInput">
+            Image
+        </label>
+        <input type="file" id="fileInput" accept="image/*" onchange="handleFileSelect(event)">
+    </div>
+    <div class="link">
+      <a href="https://gitwb.com/phn_doe" target="_blank">https://gitwb.com/phn_doe</a>
+  </div>
+  </div>
+      <div class="bio">
+        <h2 class="john_doe">John Doe</h2>
+        <p>Bio goes here</p>
+          <a class="location" href="https://orlando.com">Orlando</a><br>
+          <a href="https://twitter.com/john_doe">Twitter: @john_doe</a>
+      </div>
+    </section>
+    <div class="container">
+      <div class="box">
+          <h2 class="h2">Heroes</h2>
+          <p class="p1">Heroes description goes here</p>
+          <ul>
+            <li><a href="https://javascript.com">JavaScript</a></li>
+            <li><a href="https://angular.com">Angular</a></li>
+            <li><a href="https://angularjs.com">Angularjs</a></li>
+            <li><a href="https://angularjs.com">Angular2+</a></li>
+          </ul>
+      </div>
+      <div class="box">
+          <h2 class="h2">Heroes</h2>
+          <p class="p1">Heroes description goes here</p>
+          <ul>
+            <li><a href="https://javascript.com">JavaScript</a></li>
+            <li><a href="https://angular.com">Angular</a></li>
+            <li><a href="https://angularjs.com">Angularjs</a></li>
+            <li><a href="https://angularjs.com">Angular2+</a></li>
+          </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="box">
+          <h2 class="h2">Heroes</h2>
+          <p class="p1">Heroes description goes here</p>
+          <ul>
+            <li><a href="https://javascript.com">JavaScript</a></li>
+            <li><a href="https://angular.com">Angular</a></li>
+            <li><a href="https://angularjs.com">Angularjs</a></li>
+            <li><a href="https://angularjs.com">Angular2+</a></li>
+          </ul>
+      </div>
+      <div class="box">
+          <h2 class="h2">Heroes</h2>
+          <p class="p1">Heroes description goes here</p>
+          <ul>
+            <li><a href="https://javascript.com">JavaScript</a></li>
+            <li><a href="https://angular.com">Angular</a></li>
+            <li><a href="https://angularjs.com">Angularjs</a></li>
+            <li><a href="https://angularjs.com">Angular2+</a></li>
+          </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="box">
+          <h2 class="h2">Heroes</h2>
+          <p class="p1">Heroes description goes here</p>
+          <ul>
+            <li><a href="https://javascript.com">JavaScript</a></li>
+            <li><a href="https://angular.com">Angular</a></li>
+            <li><a href="https://angularjs.com">Angularjs</a></li>
+            <li><a href="https://angularjs.com">Angular2+</a></li>
+          </ul>
+      </div>
+      <div class="box">
+          <h2 class="h2">Heroes</h2>
+          <p class="p1">Heroes description goes here</p>
+          <ul>
+            <li><a href="https://javascript.com">JavaScript</a></li>
+            <li><a href="https://angular.com">Angular</a></li>
+            <li><a href="https://angularjs.com">Angularjs</a></li>
+            <li><a href="https://angularjs.com">Angular2+</a></li>
+          </ul>
+      </div>
+    </div>
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" href="#">&#9664</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">4</a></li>
+      <li class="page-item"><a class="page-link" href="#">5</a></li>
+      <li class="page-item"><a class="page-link" href="#">6</a></li>
+      <li class="page-item"><a class="page-link" href="#">7</a></li>
+      <li class="page-item"><a class="page-link" href="#">8</a></li>
+      <li class="page-item"><a class="page-link" href="#">9</a></li>
+      <li class="page-item"><a class="page-link" href="#">&#9654</a></li>
+  </ul>
+
+  <div class="older-newer-buttons">
+      <button class="Older">&#9664; Older</button>
+      <button class="Newer">Newer &#9654;</button>
+  </div>
+      <!-- Add more hero items here -->
+      <script>
+        function handleFileSelect(event) {
+            const fileInput = event.target;
+            const files = fileInput.files;
+
+            if (files.length > 0) {
+                const selectedFile = files[0];
+                // You can do something with the selected file, e.g., upload it to a server
+                console.log('Selected file:', selectedFile);
+            }
+        }
+    </script>
+</body>
+</html>

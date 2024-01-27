@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+
+main {
+  padding: 2rem;
+}
+
+.hero {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  background-color: #ffffff; 
+  border: 2px solid #cfcfcf; 
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden; /* Hides the default file input appearance */
+  margin: 6%;
+  margin-left:9%;
+  margin-right: 8%;
+
+}
+
+.inner-circle {
+  width: 140px;
+  height: 140px;
+  background-color: #e5e5e5; 
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 14px;
+  color: #b4b0b0; /* Text color */
+}
+
+input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.link::before {
+  content: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.8284 12L16.2426 13.4142L19.071 10.5858C20.6331 9.02365 20.6331 6.49099 19.071 4.9289C17.509 3.3668 14.9763 3.3668 13.4142 4.9289L10.5858 7.75732L12 9.17154L14.8284 6.34311C15.6095 5.56206 16.8758 5.56206 17.6568 6.34311C18.4379 7.12416 18.4379 8.39049 17.6568 9.17154L14.8284 12Z' fill='currentColor'/%3E%3Cpath d='M12 14.8285L13.4142 16.2427L10.5858 19.0711C9.02372 20.6332 6.49106 20.6332 4.92896 19.0711C3.36686 17.509 3.36686 14.9764 4.92896 13.4143L7.75739 10.5858L9.1716 12L6.34317 14.8285C5.56212 15.6095 5.56212 16.8758 6.34317 17.6569C7.12422 18.4379 8.39055 18.4379 9.1716 17.6569L12 14.8285Z' fill='currentColor'/%3E%3Cpath d='M14.8285 10.5857C15.219 10.1952 15.219 9.56199 14.8285 9.17147C14.4379 8.78094 13.8048 8.78094 13.4142 9.17147L9.1716 13.4141C8.78107 13.8046 8.78107 14.4378 9.1716 14.8283C9.56212 15.2188 10.1953 15.2188 10.5858 14.8283L14.8285 10.5857Z' fill='currentColor'/%3E%3C/svg%3E");
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.link {
+  text-align: center;
+  margin-top: 10px;
+}
+.john_doe{
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+.location::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512' width='16' height='16'%3E%3Cpath d='M172.3 501.7C27 291 0 269.4 0 192 0 86 86 0 192 0s192 86 192 192c0 77.4-27 99-172.3 309.7-9.5 13.8-29.9 13.8-39.5 0zM192 272c44.2 0 80-35.8 80-80s-35.8-80-80-80-80 35.8-80 80 35.8 80 80 80z'/%3E%3C/svg%3E");
+  margin-right: 5px;
+}
+.bio {
+  flex: 1;
+}
+
+.container {
+  display: flex;
+}
+
+.box {
+  width: calc(50% - 1%); /* Adjusted width to accommodate the padding */
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  margin: 1%; /* Added margin for 2% spacing between boxes */
+}
+
+.p1{
+  margin: 0%;
+}
+
+.h2{
+  margin: 0%;
+  color: rgb(76, 164, 247);
+}
+
+.box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.box li a {
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  background-color: rgb(76, 164, 247);
+  color: white;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+.page-link {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #3498db;
+  border: 1px solid #ddd;
+  background-color: #ffffff;
+  transition: background-color 0.3s;
+}
+
+.page-link:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+.older-newer-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.older-newer-buttons button {
+  height: 50px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #ffffff;
+  color: #3498db;
+  transition: background-color 0.3s;
+  border-radius: 50%; /* Make it circular */
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.older-newer-buttons button:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+.Older {
+  margin-right: 5%;
+}
+
+.Newer {
+  margin-left: 5%;
+}
